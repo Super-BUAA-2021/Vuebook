@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        "hide-element",
+        "back-to-top-button",
+        "chapter-fold",
+        "code",
+        "splitter",
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "pageview-count",
+        "tbfed-pagefooter",
+        "popup",
+        "github",
+        "theme-comscore",
+        "multipart"
+    ],
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy blog.zewan.cc 2021",
+            "modify_label": "该文章修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "github": {
+            "url": "https://github.com/ZewanHuang/vue-gitbook"
+        }
+    }
+}
