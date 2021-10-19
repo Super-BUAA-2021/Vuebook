@@ -22,14 +22,14 @@ jobs:
               run: |
                   npm install gitbook-cli -g
                   gitbook -v
+                  gitbook fetch 3.0.0
                   gitbook install
             - name: Build Gitbook
               run: |
-                  gitbook build
+                  gitbook build --gitbook=3.0.0
             - name: Push to gh-pages
               run: |
                   cd ./_book
-                  sed -i 's/if(m)for(n.handler\&\&/if(false)for(n.handler\&\&/' gitbook/theme.js
                   git init
                   git config --local user.name "${GITHUB_ACTOR}"
                   git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"

@@ -1,14 +1,12 @@
 {
     "plugins": [
         "hide-element",
-        "back-to-top-button",
         "chapter-fold",
         "code",
         "splitter",
         "-lunr", 
         "-search", 
         "search-pro",
-        "pageview-count",
         "tbfed-pagefooter",
         "popup",
         "github",
