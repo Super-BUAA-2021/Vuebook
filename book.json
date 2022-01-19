@@ -10,13 +10,15 @@
         "-search", 
         "search-pro",
         "tbfed-pagefooter",
-        "popup",
         "github",
         "theme-comscore",
         "multipart",
         "-livereload",
         "prism",
-        "-highlight"
+        "-highlight",
+        "anchor-navigation-ex",
+        "expandable-chapters",
+        "advanced-emoji"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
@@ -28,6 +30,9 @@
             "url": "https://github.com/ZewanHuang/vue-gitbook"
         },
         "prism": {
+            "lang": {
+                "shell": "bash"
+            },
             "css": [
                 "prismjs/themes/prism.css"
             ]
@@ -35,6 +40,28 @@
         "links": {
             "sidebar" : {
                 "Home" : "https://blog.zewan.cc"
+            }
+        },
+        "expandable-chapters": {},
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "associatedWithSummary": false,
+            "printLog": false,
+            "multipleH1": false,
+            "mode": "float",
+            "showGoTop": true,
+            "float": {
+                "floatIcon": "fa fa-navicon",
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            },
+            "pageTop": {
+                "showLevelIcon": false,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
             }
         }
     }
