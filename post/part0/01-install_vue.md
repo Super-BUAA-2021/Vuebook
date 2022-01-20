@@ -4,7 +4,7 @@
 
 NPM 是 Nodejs 下的包管理器，具备命令行接口和软件注册中心 (registry)，使用 npm 可以安装、管理、运行 packages，为项目代码适配 packages 等。本教程常用的是用它来安装环境包（如 vue-cli），以及运行 vue 等前端项目（`npm run serve`）。
 
-下载 NPM，我推荐的是使用 **NVM**（npm version manager）安装。原因是，Nodejs 版本更新快，向前兼容性较差，很容易平时使用的版本无法安装某个插件环境。比如 v14 安装了 vue 环境，此时想在本地安装 gitbook 环境，发现很多插件要求 v10，如果采用的单一版本就无法使用这些插件。而 nvm 就是类似 conda 的环境管理器，允许在一台机器拥有多个 NPM 版本环境。
+下载 NPM，有两种方法，直接下载使用一个特定版本，或安装 **NVM**（npm version manager）可管理多个 NPM 版本环境。我推荐的是使用 NVM 安装。原因是 Nodejs 版本更新快，向前兼容性较差，很容易平时使用的版本无法安装某个插件环境。比如 v14 安装了 vue 环境，此时想在本地安装 gitbook 环境，发现很多插件要求 v10，如果采用的单一版本就无法使用这些插件。而 nvm 就是类似 conda 的环境管理器，允许在一台机器拥有多个 NPM 版本环境。
 
 > 不想采用 NVM 安装方法，文末有推荐直接安装 NPM 的博客链接
 
@@ -12,10 +12,10 @@ NPM 是 Nodejs 下的包管理器，具备命令行接口和软件注册中心 (
 
 > 若本地有 Nodejs 环境，下载 NVM 前需先卸载！
 
-第一步，下载 nvm，链接如下：
+第一步，下载最新版 nvm，链接如下：
 
-1. Windows 版本：[https://github.com/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows/releases)
-2. Mac 版本：[https://github.com/nvm-sh/nvm#install--update-script](https://github.com/nvm-sh/nvm#install--update-script)
+1. Windows 版本：<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">https://github.com/coreybutler/nvm-windows/releases</a>
+2. Mac 版本：<a href="https://github.com/nvm-sh/nvm#install--update-script" target="_blank">https://github.com/nvm-sh/nvm#install--update-script</a>
 
 **下载时注意安装路径不能出现空格，最好不要用中文路径！**
 
@@ -44,7 +44,7 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 ```shell
 nvm --version               # 查看nvm版本
-nvm install stable          # 安装最新稳定版 nodejs
+nvm install latest          # 安装最新版 nodejs
 nvm install <version>       # 安装指定版本 For examle:
 nvm install v14.16.0
 nvm ls                      # 查看已安装的 nodejs 版本
@@ -112,8 +112,8 @@ npm run serve
 
 如果不想采用本文章所讲的『Nvm管理和Npm安装』的方式，可以参考以下链接直接安装 NPM：
 
-* [安装Node.js和npm - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528)
-* [Vue.js 安装 - 菜鸟教程](https://www.runoob.com/vue2/vue-install.html)
+* <a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528" target="_blank">安装Node.js和npm - 廖雪峰的官方网站</a>
+* <a href="https://www.runoob.com/vue2/vue-install.html" target="_blank">Vue.js 安装 - 菜鸟教程</a>
 
 ### 2. 关于 Nvm 的实现方式
 

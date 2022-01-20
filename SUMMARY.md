@@ -5,7 +5,6 @@
 ## Part 0 - Vue 前序教程
 * [Vue 安装](post/part0/01-install_vue.md)
 * [Vue 项目创建](post/part0/02-project_init.md)
-* [Vue 编辑软件](post/part0/03-edit_software.md)
 
 ## Part 1 - Vue2 基本教程
 * [Vue 目录结构](post/part1/01-vue2-structure.md)
