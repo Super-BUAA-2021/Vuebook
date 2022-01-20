@@ -4,11 +4,13 @@
 
 NPM 是 Nodejs 下的包管理器，具备命令行接口和软件注册中心 (registry)，使用 npm 可以安装、管理、运行 packages，为项目代码适配 packages 等。本教程常用的是用它来安装环境包（如 vue-cli），以及运行 vue 等前端项目（`npm run serve`）。
 
-下载 NPM，我推荐的是使用 **NVM**（npm version manager）安装。原因是，Nodejs 版本更新快，向前兼容性较差，很容易平时使用的版本无法安装某个插件环境。比如 v14 安装了 vue 环境，此时想在本地安装 gitbook 环境，发现很多插件要求 v10，如果采用的单一版本就无法使用这些插件。而 nvm 就是类似 conda 的环境管理器，效果较好。
+下载 NPM，我推荐的是使用 **NVM**（npm version manager）安装。原因是，Nodejs 版本更新快，向前兼容性较差，很容易平时使用的版本无法安装某个插件环境。比如 v14 安装了 vue 环境，此时想在本地安装 gitbook 环境，发现很多插件要求 v10，如果采用的单一版本就无法使用这些插件。而 nvm 就是类似 conda 的环境管理器，允许在一台机器拥有多个 NPM 版本环境。
 
-> 若本地有 Nodejs 环境，下载 NVM 前需先卸载
+> 不想采用 NVM 安装方法，文末有推荐直接安装 NPM 的博客链接
 
 ## 下载 NVM
+
+> 若本地有 Nodejs 环境，下载 NVM 前需先卸载！
 
 第一步，下载 nvm，链接如下：
 
@@ -108,7 +110,10 @@ npm run serve
 
 ### 1. 安装 Vue 的其它方式
 
-如果不想采用本文章所讲的『Nvm管理和Npm安装』的方式，可以参考[Vue.js 安装 - 菜鸟教程](https://www.runoob.com/vue2/vue-install.html)的其它方式。
+如果不想采用本文章所讲的『Nvm管理和Npm安装』的方式，可以参考以下链接直接安装 NPM：
+
+* [安装Node.js和npm - 廖雪峰的官方网站](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528)
+* [Vue.js 安装 - 菜鸟教程](https://www.runoob.com/vue2/vue-install.html)
 
 ### 2. 关于 Nvm 的实现方式
 
