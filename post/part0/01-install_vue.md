@@ -14,7 +14,7 @@ NPM 是 Nodejs 下的包管理器，具备命令行接口和软件注册中心 (
 
 第一步，下载最新版 nvm，链接如下：
 
-1. Windows 版本：<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">https://github.com/coreybutler/nvm-windows/releases</a>
+1. Windows 版本：<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank">https://github.com/coreybutler/nvm-windows/releases</a>，选择下载 `nvm-setup.zip`
 2. Mac 版本：<a href="https://github.com/nvm-sh/nvm#install--update-script" target="_blank">https://github.com/nvm-sh/nvm#install--update-script</a>
 
 **下载时注意安装路径不能出现空格，最好不要用中文路径！**
