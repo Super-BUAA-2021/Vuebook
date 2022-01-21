@@ -2,6 +2,8 @@
 
 上篇文章创建了一个初始的 Vue2 项目，本文对这个几乎空白的项目框架进行简要介绍。
 
+> 阅读本文时并不要求理解各部分是如何编写的，只大致了解它们的用途，在下一篇文章将用一个实例来展示如何使用。
+
 <img src="/img/post-intro/structure.png" alt="intro" target="_blank" style="width: 350px">
 
 | 目录/文件 | 说明 |
@@ -94,19 +96,70 @@ const routes = [
 
 ### store
 
-
+store 目录下主要放置前端存储数据的格式，利用 vuex 和 localStorage 在用户的网页端保存基本的用户信息。例如用户登录之后，将用户名存于前端，这样在渲染网页时可以直接使用，且向后端发送请求时可以携带用户名，以验证用户的登录信息是否有效。
 
 ### views
 
+在 views 目录下，主要是页面或局部组件的 vue 文件。看初始项目，里面有 `About.vue` 和 `Home.vue`，分别对应路由 `/about` 和 `/`。简单看一下这两个文件：
 
+* `About.vue`：内容很简单，仅包含 html 部分，仅仅是一句话。
+
+```html
+<template>
+  <div class="about">
+    <h1>This is an about page</h1>
+  </div>
+</template>
+```
+
+* `Home.vue`：包含 html 和 script 两部分，可以看到在 script 标签中引入了 `HelloWorld` 组件，然后在 html 部分中进行调用，这样该页面的效果为，`logo` 图片加 `HelloWorld` 组件。
+
+```html
+<template>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
+</template>
+
+<script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
+export default {
+  name: 'Home',
+  components: {
+    HelloWorld
+  }
+}
+</script>
+```
 
 ### App.vue
 
+`App.vue` 为项目入口文件，该文件描述整个网站将渲染的内容。
 
+```html
+<template>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>
+</template>
+```
+
+如上述代码，它由 `nav` 的代码块和 `router-view` 组成。前者是两个超链接，有点类似于网站的导航栏，将在各路由下都展示；后者表示根据路由渲染对应的 vue 组件，如果当前是 `/about` 则渲染 `About.vue` 文件描述的内容。
 
 ### main.js
 
+`main.js` 是项目的核心文件，在这里可以导入各种全局依赖。比如全局导入 <a href="https://element.eleme.cn/#/zh-CN" target="_blank">elementUI</a> 等UI组件或 <a href="https://echarts.apache.org/zh/index.html" target="_blank">ECharts</a> 可视化图标库等，`npm install` 后将在该文件中全局引入。
 
+---
+
+以上介绍了 vue2 项目创建初始的各模块用途，掺杂了部分代码编写的指示，并不要求完全理解。在下一篇文章中，将会在初始项目的基础上编写一个登录页面，以帮助初学者更快入门。
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
