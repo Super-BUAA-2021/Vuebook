@@ -8,7 +8,7 @@
 
 ## Part 1 - Vue2 基本教程
 * [Vue 项目初识](post/part1/01-vue2-structure.md)
-* [Vue 文件介绍](post/part1/02-instance.md)
+* [Vue 开发实战一：登录页面](post/part1/02-instance.md)
 * [Vue 路由](post/part1/03-router.md)
 * [Vue axios 数据传输](post/part1/04-axios.md)
 * [Vue 语法语句](post/part1/05-element.md)
