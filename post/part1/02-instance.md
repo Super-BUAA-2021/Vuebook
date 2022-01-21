@@ -200,6 +200,8 @@ const routes = [
 
 刷新网站，可以发现登录页面终于有点拿得出手了。
 
+<a href="https://jsfiddle.net/brky18dt/" target="_blank" style=""><button style="background-color: #409eff; border-color: #409eff; font-size: 0.8em; color: #fff; padding: 6px 10px; border-radius: 10px">查看效果</button></a>
+
 <img src="/img/post-instance/login-new.png" alt="login">
 
 ## 后言
