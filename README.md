@@ -34,6 +34,9 @@
 
 **与其它网上教程不同的是，本作品尽可能手把手演示项目的创建和基本介绍，达到快速入门的效果。同时，在开发中我所用到的一些奇巧的插件或技巧，都会在这里记录。**
 
+> [!TIP|style:flat]
+> 为方便学习者或开发者熟悉代码的功能，本人改写已有项目和自己编写后端，实现了简易的 <a href="https://zewanhuang.github.io/vue-online/" target="_blank">Vue 在线运行、预览的在线平台</a>，同时具有类似 <a href="https://paste.ubuntu.com/" target="_blank">ubuntu pastebin</a> 发布分享代码的功能，将在教程中结合使用，学习者也可自行尝试编写代码查看效果。源码仓库地址：<a href="https://github.com/ZewanHuang/vue-online" target="_blank">ZewanHuang/vue-online</a>
+
 ## License
 
 本作品采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 进行许可。
