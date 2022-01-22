@@ -73,6 +73,9 @@ npm --version
 
 可确认 npm 是否安装成功。
 
+> [!TIP|style:flat]
+> 执行 `nvm use` 命令后若出现 `return status 1` 和一段乱码的错误提示，则用管理员身份打开 cmd 重新执行
+
 ## 安装 Vue 环境
 
 输入以下命令，安装 vue.js、vue-router、vue-cli 脚手架到 global 全局目录：
