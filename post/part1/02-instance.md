@@ -4,7 +4,7 @@
 
 本文代码的仓库：<a href="https://github.com/Super-BUAA-2021/vue-template" target="_blank">https://github.com/Super-BUAA-2021/vue-template</a>
 
-> 不熟悉 git 的同学可以看看仓库的 commit 提交记录，理解一次 commit 的时机
+> 不熟悉 git 的同学可以看看仓库的 commit 提交记录，理解 commit 的时机
 
 ## 添加网站基本信息
 
@@ -200,7 +200,7 @@ const routes = [
 
 刷新网站，可以发现登录页面终于有点拿得出手了。
 
-<a href="https://jsfiddle.net/brky18dt/" target="_blank" style=""><button style="background-color: #409eff; border-color: #409eff; font-size: 0.8em; color: #fff; padding: 6px 10px; border-radius: 10px">查看效果</button></a>
+<a href="https://zewanhuang.github.io/vue-online/?p=C21AA8BC4C" target="_blank" style=""><button style="background-color: #409eff; border-color: #409eff; font-size: 0.8em; color: #fff; padding: 6px 10px; border-radius: 10px">查看效果</button></a>
 
 <img src="/img/post-instance/login-new.png" alt="login">
 

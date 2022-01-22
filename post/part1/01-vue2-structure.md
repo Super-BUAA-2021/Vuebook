@@ -2,6 +2,7 @@
 
 上篇文章创建了一个初始的 Vue2 项目，本文对这个几乎空白的项目框架进行简要介绍。
 
+> [!TIP|style:flat]
 > 阅读本文时并不要求理解各部分是如何编写的，只大致了解它们的用途，在下一篇文章将用一个实例来展示如何使用。
 
 <img src="/img/post-intro/structure.png" alt="intro" target="_blank" style="width: 350px">

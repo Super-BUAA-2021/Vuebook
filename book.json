@@ -3,6 +3,10 @@
     "author": "ZewanHuang",
     "description": "Vue 框架的使用教程",
     "plugins": [
+        "anchor-navigation-ex",
+        "expandable-chapters",
+        "advanced-emoji",
+        "flexible-alerts",
         "chapter-fold",
         "code",
         "splitter",
@@ -15,10 +19,7 @@
         "multipart",
         "-livereload",
         "prism",
-        "-highlight",
-        "anchor-navigation-ex",
-        "expandable-chapters",
-        "advanced-emoji"
+        "-highlight"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
