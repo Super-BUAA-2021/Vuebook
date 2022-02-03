@@ -12,7 +12,7 @@ vue create vue-project      # [vue-project] 为项目名称
 
 <img src="/img/post-init/vue-create.png" alt="vue-create" style="width: 50%">
 
-选择项目模式，本教程将首先介绍 Vue2 的使用，因此在这里选择第一项。这里的 `router` 表示路由管理，`vuex` 表示前端缓存管理，后续的开发会使用到，因此选择该项。
+选择项目模式，本教程将首先介绍 Vue2 的使用，因此在这里选择第一项。这里的 `router` 表示路由管理，`vuex` 表示前端状态存储管理，后续的开发会使用到，因此选择该项。
 
 等待片刻后，初始化项目成功。
 
