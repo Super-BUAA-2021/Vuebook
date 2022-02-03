@@ -163,7 +163,7 @@ const routes = [
 
 ```js
 router.beforeEach((to, from, next) => {
-    // 通过 store 库获取用户登录信息（后面会介绍到）
+    // 通过 Vuex 获取用户登录信息（在实战篇中会介绍到）
     const userInfo = user.getters.getUser(user.state())
 
     // 若用户未登录且访问的页面需要登录，则跳转至登录页面
