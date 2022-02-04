@@ -37,6 +37,13 @@
 > [!TIP|style:flat]
 > 为方便学习者或开发者熟悉代码的功能，本人改写已有项目和自己编写后端，实现了简易的 <a href="https://zewanhuang.github.io/vue-online/" target="_blank">Vue 在线运行、预览的在线平台</a>，同时具有类似 <a href="https://paste.ubuntu.com/" target="_blank">ubuntu pastebin</a> 发布分享代码的功能，将在教程中结合使用，学习者也可自行尝试编写代码查看效果。源码仓库地址：<a href="https://github.com/ZewanHuang/vue-online" target="_blank">ZewanHuang/vue-online</a>
 
+## 如何食用
+
+两种方式：
+
+1. 希望快速入门或有一定的前端基础：安装好环境，理解项目架构后，直接跟着教程的开发实战上手，在完善登录页面中快速入门；
+2. 希望系统学习、了解更多基础知识：从头到尾，按照教程各篇文章的提示系统学习。
+
 ## License
 
 本作品采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 进行许可。
