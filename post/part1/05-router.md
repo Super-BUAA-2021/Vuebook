@@ -136,7 +136,7 @@ router.go(100)
 
 > 更多 router-link 的用法见 <a href="https://www.runoob.com/vue2/vue-routing.html" target="_blank">Vue.js 路由 - RUNOOB</a>
 
-事实上，`<router-link>` 标签可以使用 [`@click`](/post/part1/03-grammar.html#点击按钮事件) + [`router.push`](/post/part1/04-router.html#js-路由跳转) 代替，即在 html 的内容中添加 `@click` 属性调用函数，在函数中使用 `router.push` 实现跳转。
+事实上，`<router-link>` 标签可以使用 [`@click`](post/part1/03-grammar.html#点击按钮事件) + [`router.push`](post/part1/04-router.html#js-路由跳转) 代替，即在 html 的内容中添加 `@click` 属性调用函数，在函数中使用 `router.push` 实现跳转。
 
 ## 路由钩子(导航守卫)
 
