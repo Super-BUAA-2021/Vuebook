@@ -73,7 +73,7 @@ export default {
 
 在上面的示例中，还定义了一个方法，实现了与计算属性一致的效果。那 `computed` 与 `methods` 的区别是什么？
 
-> [NOTE|style:flat]
+> [!NOTE|style:flat]
 > computed 是基于依赖缓存的，只有相关依赖发生改变时才会重新计算值；而使用 methods，在重新渲染或再次调用的时候，函数总会重新调用执行，可以理解一下<a target="_blank" href="https://c.runoob.com/codedemo/5530/">示例</a>。在没有使用依赖缓存时，推荐使用 methods，它能接受参数，使用更灵活。
 
 目前我们只介绍了计算属性的 getter，即获取值，在需要时可以定义该属性的 setter。
