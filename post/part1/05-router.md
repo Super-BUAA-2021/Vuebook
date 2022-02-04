@@ -86,7 +86,7 @@ this.$router.push({ path: 'register', query: { mode: 'vip' } })
 **注意：**
 
 1. 使用 params 传参，对象属性里只能是 `name` 而不能是 `path`，即 params 方法只能使用 `name` 引入路由；
-2. 如果目的路由和当前路由相同，只有参数发生了改变，比如从一个用户资料 `/user/1` 跳转到另一个用户 `/user/2`，则可能需要使用 Vue.js 属性中的 `beforeRouteUpdate` 来响应这个变化，比如重新获取用户信息。
+2. 如果目的路由和当前路由相同，只有参数发生了改变，比如从一个用户资料 `/user/1` 跳转到另一个用户 `/user/2`，则可能需要使用 Vue.js 生命周期的 `beforeRouteUpdate` 来响应这个变化，比如重新获取用户信息。
 
 > [!TIP|style:flat]
 > 路由跳转后，常需要接收参数，query 方式使用 `this.$route.query.mode` 接收 `mode` 参数，params 方式使用 `this.$route.params.userId` 接收 `userId` 参数。

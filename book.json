@@ -23,7 +23,7 @@
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
-            "copyright":"Copyright &copy blog.zewan.cc 2021",
+            "copyright":"Copyright &copy blog.zewan.cc 2022",
             "modify_label": "该文章修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },

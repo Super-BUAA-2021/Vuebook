@@ -10,7 +10,7 @@
 * [Vue 项目初识](post/part1/01-vue2-structure.md)
 * [Vue 开发实战一：登录页面](post/part1/02-instance.md)
 * [Vue 语法语句](post/part1/03-grammar.md)
-* [Vue 属性](post/part1/04-attribute.md)
+* [Vue 生命周期与属性](post/part1/04-attribute.md)
 * [Vue 路由](post/part1/05-router.md)
 * [Vue axios 请求](post/part1/06-axios.md)
 * [Vue 开发实战二：登录请求](post/part1/07-login-res.md)
