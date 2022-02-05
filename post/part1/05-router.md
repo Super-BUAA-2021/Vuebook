@@ -148,20 +148,22 @@ router.go(100)
 
 ```js
 const routes = [
-    {
-        path: 'center',
-        name: 'Center',
-        component: () => import('../views/center.vue'),
-        meta: {
-            requireAuth: true
-        }
+  {
+    path: 'center',
+    name: 'Center',
+    component: () => import('../views/center.vue'),
+    meta: {
+      requireAuth: true
     }
+  }
 ]
 ```
 
 继续在该文件中添加以下代码，判断未登录则跳转登录页面：
 
 ```js
+import user from "@/store/user";
+
 router.beforeEach((to, from, next) => {
     // 通过 Vuex 获取用户登录信息（在实战篇中会介绍到）
     const userInfo = user.getters.getUser(user.state())
