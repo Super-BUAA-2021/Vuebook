@@ -7,7 +7,7 @@ Axios 是一个基于 promise 的网络请求库(HTTP)，可以用于浏览器�
 ## 安装 Axios
 
 ```shell
-npm install axios -save
+npm install axios --save
 ```
 
 ## 全局引入

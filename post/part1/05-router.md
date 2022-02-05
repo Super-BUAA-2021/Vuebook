@@ -9,7 +9,7 @@ Vue.js 路由需要载入 <a href="https://github.com/vuejs/vue-router" target="
 在创建项目初始，若已选中使用 router，则已自动载入；否则需安装引入：
 
 ```shell
-npm install vue-router
+npm install vue-router --save
 ```
 
 ## 路由定义

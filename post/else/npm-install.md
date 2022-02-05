@@ -8,14 +8,16 @@
 * 不会修改 package.json
 * 运行 `npm install` 命令时不会自动安装 X
 
-### npm install X -save
+### npm install X --save
+
+> `-save` 和 `--save` 都可以，一道杠和两道杠效果一样
 
 * 会把 X 包安装到 node_modules 目录中
 * 会在 package.json 的 `dependencies` 属性下添加 X
 * 执行 `npm install` 命令时，会自动安装 X 到 node_modules 目录中
 * 执行 `npm install –production` 或者注明 `NODE_ENV` 变量值为 `production` 时，会自动安装 X 到 node_modules 目录中
 
-### npm install X -save-dev
+### npm install X --save-dev
 
 * 会把 X 包安装到 node_modules 目录中
 * 会在 package.json 的 `devDependencies` 属性下添加 X
