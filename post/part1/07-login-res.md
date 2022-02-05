@@ -267,7 +267,7 @@ click_login() {
 
 继续在 `router/index.js` 中添加以下代码，判断访问页面若需要登录且当前未登录，则拦截至登录路由：
 
-> [!WARN|style:flat]
+> [!WARNING|style:flat]
 > 下面代码中 `router.beforeEach` 这一段需要在 `const router = new VueRouter` 代码段之后！
 
 ```js
