@@ -21,3 +21,8 @@
 ## Advanced
 * [Echart 图表](post/advanced/echart.md)
 
+## Else
+* [npm install -save/-g 参数的区别](post/else/npm-install.md)
+
+## Reference
+* [参考文献](post/reference/reference.md)
