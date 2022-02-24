@@ -43,13 +43,15 @@ axios 请求的 POST 和 GET 两种方式可以有不同的编写，分别是 `a
 
 示例：发送用户名，请求用户的真实姓名。
 
+> 下面代码中使用了 `qs.stringify`，因此需要在 `<script>` 标签中起始处添加 `import qs from "qs";` 导入 qs 工具。本教程后面的代码如使用该工具，则同样需要添加。
+
 ```js
 this.$axios({
     method: 'get',              /* 指明请求方式，可以是 get 或 post */
     url: '/user/realname',      /* 指明后端 api 路径，由于在 main.js 已指定根路径，因此在此处只需写相对路由 */
-    data: {                     /* 需要向后端传输的数据，JSON 格式 */
+    data: qs.stringify({        /* 需要向后端传输的数据，此处使用 qs.stringify 将 json 数据序列化以发送后端 */
         username: 'Zewan',
-    }
+    })
 })
 .then(res => {                  /* res 是 response 的缩写 */
     if (res.data.success)       /* res.data 是后端返回的数据对象 */
@@ -84,12 +86,12 @@ this.$axios({
 methods: {
     getUserEmail: function() {
         return this.$axios({
-            method: 'get', url: '/user/getEmail', data: { username: 'Zewan' }
+            method: 'get', url: '/user/getEmail', data: qs.stringify({ username: 'Zewan' })
         })
     },
     getUserPasswd: function() {
         return this.$axios({
-            method: 'get', url: '/user/getPasswd', data: { username: 'Zewan' }
+            method: 'get', url: '/user/getPasswd', data: qs.stringify({ username: 'Zewan' })
         })
     },
     getAllInfo: function() {

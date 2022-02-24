@@ -203,15 +203,17 @@ axios.defaults.baseURL = 'http://localhost:8000';
 
 则 `click_login` 函数代码如下：
 
+> 下面代码中使用了 `qs.stringify`，因此需要在 `<script>` 标签中起始处添加 `import qs from "qs";` 导入 qs 工具。本教程后面的代码如使用该工具，则同样需要添加。
+
 ```js
 click_login() {
   this.$axios({
     method: 'post',           /* 指明请求方式，可以是 get 或 post */
     url: '/user/login',       /* 指明后端 api 路径，由于在 main.js 已指定根路径，因此在此处只需写相对路由 */
-    data: {                   /* 需要向后端传输的数据，JSON 格式 */
+    data: qs.stringify({      /* 需要向后端传输的数据，此处使用 qs.stringify 将 json 数据序列化以发送后端 */
       username: this.username,
       password: this.password
-    }
+    })
   })
   .then(res => {              /* res 是 response 的缩写 */
     switch (res.data.status_code) {
