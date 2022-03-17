@@ -258,18 +258,11 @@ export default {
 > 本文介绍的语法语句在 Vue 项目开发中经常使用，建议自己动手熟练熟练。最快速上手的方法还是直接在开发中熟悉，记不清了就回来查一查。
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
-<script>
-  var gitalk = new Gitalk({
-    "clientID": "27273cfa4e0ffa52e2ac",
-    "clientSecret": "ce2b2e78b2cd9dca945adf4d65a3b99248c7b2c4",
-    "repo": "Vuebook",
-    "owner": "Super-BUAA-2021",
-    "admin": ["Super-BUAA-2021","ZewanHuang"],
-    "id": window.location.pathname,      
-    "distractionFreeMode": false  
-  });
-  gitalk.render("gitalk-container");
+<script src="https://utteranc.es/client.js"
+        repo="Super-BUAA-2021/Vuebook"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>

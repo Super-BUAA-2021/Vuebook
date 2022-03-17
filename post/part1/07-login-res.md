@@ -338,18 +338,11 @@ setTimeout(() => {
 
 至此，登录相关的功能需求已完成。当然，可能还存在一些细节待完善，比如系统获取到点击登录按钮的事件后，前端先检查用户名和密码是否为空，都不为空才向后端发送登录请求。（可自行完善）
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
-<script>
-  var gitalk = new Gitalk({
-    "clientID": "27273cfa4e0ffa52e2ac",
-    "clientSecret": "ce2b2e78b2cd9dca945adf4d65a3b99248c7b2c4",
-    "repo": "Vuebook",
-    "owner": "Super-BUAA-2021",
-    "admin": ["Super-BUAA-2021","ZewanHuang"],
-    "id": window.location.pathname,      
-    "distractionFreeMode": false  
-  });
-  gitalk.render("gitalk-container");
+<script src="https://utteranc.es/client.js"
+        repo="Super-BUAA-2021/Vuebook"
+        issue-term="pathname"
+        label="Comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
