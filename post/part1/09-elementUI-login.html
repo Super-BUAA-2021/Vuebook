@@ -1,0 +1,727 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Vue 开发实战三：重写登录 · VUE BOOK</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="ZewanHuang">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10-component.html" />
+    
+    
+    <link rel="prev" href="08-elementUI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Vue 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 0 - Vue 前序教程</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part0/01-install_vue.html">
+            
+                <a href="../part0/01-install_vue.html">
+            
+                    
+                    Vue 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part0/02-project_init.html">
+            
+                <a href="../part0/02-project_init.html">
+            
+                    
+                    Vue 项目创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 1 - Vue2 基本教程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="01-vue2-structure.html">
+            
+                <a href="01-vue2-structure.html">
+            
+                    
+                    Vue 项目初识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="02-instance.html">
+            
+                <a href="02-instance.html">
+            
+                    
+                    Vue 开发实战一：登录页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-grammar.html">
+            
+                <a href="03-grammar.html">
+            
+                    
+                    Vue 语法语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="04-attribute.html">
+            
+                <a href="04-attribute.html">
+            
+                    
+                    Vue 生命周期与属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="05-router.html">
+            
+                <a href="05-router.html">
+            
+                    
+                    Vue 路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="06-axios.html">
+            
+                <a href="06-axios.html">
+            
+                    
+                    Vue axios 请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="07-login-res.html">
+            
+                <a href="07-login-res.html">
+            
+                    
+                    Vue 开发实战二：登录请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="08-elementUI.html">
+            
+                <a href="08-elementUI.html">
+            
+                    
+                    Vue 引入 ElementUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.9" data-path="09-elementUI-login.html">
+            
+                <a href="09-elementUI-login.html">
+            
+                    
+                    Vue 开发实战三：重写登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="10-component.html">
+            
+                <a href="10-component.html">
+            
+                    
+                    Vue 组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../advanced/echart.html">
+            
+                <a href="../advanced/echart.html">
+            
+                    
+                    Echart 图表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Else</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../else/npm-install.html">
+            
+                <a href="../else/npm-install.html">
+            
+                    
+                    npm install -save/-g 参数的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Reference</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../reference/reference.html">
+            
+                <a href="../reference/reference.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Vue 开发实战三：重写登录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#vue-&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;"><b></b>Vue &#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;</a></li><ul><li><span class="title-icon "></span><a href="#elementui-&#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;"><b></b>ElementUI &#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B89;&#x88C5;"><b></b>&#x5B89;&#x88C5;</a></li><li><span class="title-icon "></span><a href="#&#x5168;&#x5C40;&#x5F15;&#x5165;"><b></b>&#x5168;&#x5C40;&#x5F15;&#x5165;</a></li></ul><li><span class="title-icon "></span><a href="#elementui-&#x91CD;&#x5199;&#x767B;&#x5F55;"><b></b>ElementUI &#x91CD;&#x5199;&#x767B;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x63D0;&#x793A;"><b></b>&#x4EE3;&#x7801;&#x63D0;&#x793A;</a></li><ul><li><span class="title-icon "></span><a href="#&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;"><b></b>&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#scoped-css"><b></b>Scoped CSS</a></li></ul></ul></ul></div><a href="#vue-&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="vue-&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;"><a name="vue-&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;" class="anchor-navigation-ex-anchor" href="#vue-&#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>Vue &#x5F00;&#x53D1;&#x5B9E;&#x6218;&#x4E09;&#xFF1A;&#x91CD;&#x5199;&#x767B;&#x5F55;</h1>
+<p>&#x672C;&#x6587;&#x5C06;&#x4F7F;&#x7528; elementUI &#x91CD;&#x5199;&#x767B;&#x5F55;&#x9875;&#x9762;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x5C06;&#x540C;&#x6B65;&#x81F3; <a href="https://github.com/Super-BUAA-2021/vue-template" target="_blank" _target="blank">Github &#x4ED3;&#x5E93;</a>&#x3002;&#x4E3A;&#x907F;&#x514D;&#x8986;&#x76D6;&#x539F;&#x767B;&#x5F55;&#x9875;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x672C;&#x6587;&#x5C06;&#x65B0;&#x767B;&#x5F55;&#x7EC4;&#x4EF6;&#x547D;&#x540D;&#x4E3A; <code>NewLogin.vue</code>&#xFF0C;&#x8DEF;&#x7531;&#x6307;&#x5B9A;&#x4E3A; <code>/new_login</code>&#x3002;</p>
+<h2 id="elementui-&#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;"><a name="elementui-&#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;" class="anchor-navigation-ex-anchor" href="#elementui-&#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>ElementUI &#x5B89;&#x88C5;&#x548C;&#x5F15;&#x5165;</h2>
+<h3 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h3>
+<pre class="language-"><code class="lang-shell"><span class="token function">npm</span> i element-ui -S
+</code></pre>
+<h3 id="&#x5168;&#x5C40;&#x5F15;&#x5165;"><a name="&#x5168;&#x5C40;&#x5F15;&#x5165;" class="anchor-navigation-ex-anchor" href="#&#x5168;&#x5C40;&#x5F15;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5168;&#x5C40;&#x5F15;&#x5165;</h3>
+<p>&#x5728; <code>main.js</code> &#x4E2D;&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> ElementUI <span class="token keyword">from</span> <span class="token string">&apos;element-ui&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&apos;element-ui/lib/theme-chalk/index.css&apos;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ElementUI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="elementui-&#x91CD;&#x5199;&#x767B;&#x5F55;"><a name="elementui-&#x91CD;&#x5199;&#x767B;&#x5F55;" class="anchor-navigation-ex-anchor" href="#elementui-&#x91CD;&#x5199;&#x767B;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>ElementUI &#x91CD;&#x5199;&#x767B;&#x5F55;</h2>
+<p>&#x9875;&#x9762;&#x6240;&#x7528;&#x7EC4;&#x4EF6;&#x542B; <a target="_blank" href="https://element.eleme.cn/#/zh-CN/component/button" _target="blank">Button &#x6309;&#x94AE;</a>&#x3001;<a target="_blank" href="https://element.eleme.cn/#/zh-CN/component/input" _target="blank">Input &#x8F93;&#x5165;&#x6846;</a>&#x3001;<a target="_blank" href="https://element.eleme.cn/#/zh-CN/component/message" _target="blank">Message &#x6D88;&#x606F;&#x63D0;&#x793A;</a>&#x3001;<a target="_blank" href="https://element.eleme.cn/#/zh-CN/component/form" _target="blank">Form &#x8868;&#x5355;</a>&#x3002;&#x76F8;&#x4FE1;&#x7ED3;&#x5408;&#x5B98;&#x65B9;&#x6307;&#x5357;&#xFF0C;&#x5B66;&#x4E60;&#x8005;&#x5F88;&#x5BB9;&#x6613;&#x4E0A;&#x624B;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x76F4;&#x63A5;&#x653E;&#x51FA;&#x91CD;&#x5199;&#x540E;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bgbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bgbox<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../../src/assets/background.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>&#x767B; &#x5F55;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span> <span class="token attr-name">:model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>username<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-input</span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x7528;&#x6237;&#x540D;&#x6216;&#x90AE;&#x7BB1;<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>username<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.username<span class="token punctuation">&quot;</span></span> <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-input</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-input</span>
+              <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x5BC6;&#x7801;<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">show-password</span>
+              <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.password<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">@keyup.enter.native</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-input</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn_login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x767B;<span class="token entity named-entity" title="&#xA0;">&amp;nbsp;</span><span class="token entity named-entity" title="&#xA0;">&amp;nbsp;</span>&#x5F55;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>suffix<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toRegister<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x6CE8;&#x518C;&#x5E10;&#x53F7;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+import qs from &quot;qs&quot;;
+export default {
+  name: &quot;NewLogin&quot;,
+  data() {
+    return {
+      form: {
+        username: &apos;&apos;,
+        password: &apos;&apos;,
+      }
+    }
+  },
+  methods: {
+    login: function () {
+      // &#x68C0;&#x67E5;&#x8868;&#x5355;&#x662F;&#x5426;&#x6709;&#x586B;&#x5199;&#x5185;&#x5BB9;
+      if (this.form.username === &apos;&apos; || this.form.password === &apos;&apos;) {
+        this.$message.warning(&quot;&#x8BF7;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF01;&quot;);
+        return;
+      }
+
+      this.$axios({
+        method: &apos;post&apos;,           /* &#x6307;&#x660E;&#x8BF7;&#x6C42;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F; get &#x6216; post */
+        url: &apos;/user/login&apos;,       /* &#x6307;&#x660E;&#x540E;&#x7AEF; api &#x8DEF;&#x5F84;&#xFF0C;&#x7531;&#x4E8E;&#x5728; main.js &#x5DF2;&#x6307;&#x5B9A;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x6B64;&#x5904;&#x53EA;&#x9700;&#x5199;&#x76F8;&#x5BF9;&#x8DEF;&#x7531; */
+        data: qs.stringify({      /* &#x9700;&#x8981;&#x5411;&#x540E;&#x7AEF;&#x4F20;&#x8F93;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6B64;&#x5904;&#x4F7F;&#x7528; qs.stringify &#x5C06; json &#x6570;&#x636E;&#x5E8F;&#x5217;&#x5316;&#x4EE5;&#x53D1;&#x9001;&#x540E;&#x7AEF; */
+          username: this.form.username,
+          password: this.form.password
+        })
+      })
+      .then(res =&gt; {              /* res &#x662F; response &#x7684;&#x7F29;&#x5199; */
+        switch (res.data.status_code) {
+          case 200:
+            this.$message.success(&quot;&#x767B;&#x5F55;&#x6210;&#x529F;&#xFF01;&quot;);
+            /* &#x5C06;&#x540E;&#x7AEF;&#x8FD4;&#x56DE;&#x7684; user &#x4FE1;&#x606F;&#x4F7F;&#x7528; vuex &#x5B58;&#x50A8;&#x8D77;&#x6765; */
+            this.$store.dispatch(&apos;saveUserInfo&apos;, {
+              user: {
+                &apos;username&apos;: res.data.username,
+                &apos;token&apos;: res.data.token,
+                &apos;userId&apos;: res.data.user_id
+              }
+            });
+
+            /* &#x4ECE; localStorage &#x4E2D;&#x8BFB;&#x53D6; preRoute &#x952E;&#x5BF9;&#x5E94;&#x7684;&#x503C; */
+            const history_pth = localStorage.getItem(&apos;preRoute&apos;);
+            /* &#x82E5;&#x4FDD;&#x5B58;&#x7684;&#x8DEF;&#x7531;&#x4E3A;&#x7A7A;&#x6216;&#x4E3A;&#x6CE8;&#x518C;&#x8DEF;&#x7531;&#xFF0C;&#x5219;&#x8DF3;&#x8F6C;&#x9996;&#x9875;&#xFF1B;&#x5426;&#x5219;&#x8DF3;&#x8F6C;&#x524D;&#x8DEF;&#x7531;&#xFF08;setTimeout&#x8868;&#x793A;1000ms&#x540E;&#x6267;&#x884C;&#xFF09; */
+            setTimeout(() =&gt; {
+              if (history_pth == null || history_pth === &apos;/register&apos;) {
+                this.$router.push(&apos;/&apos;);
+              } else {
+                this.$router.push({ path: history_pth });
+              }
+            }, 1000);
+            break;
+          case 401:
+            this.$message.error(&quot;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x5B58;&#x5728;&#xFF01;&quot;);
+            break;
+          case 402:
+            this.$message.error(&quot;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&#xFF01;&quot;);
+            break;
+        }
+      })
+      .catch(err =&gt; {
+        console.log(err);         /* &#x82E5;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x5219;&#x5728;&#x7EC8;&#x7AEF;&#x8F93;&#x51FA;&#x76F8;&#x5173;&#x4FE1;&#x606F; */
+      })
+    },
+    toRegister: function () {
+      // &#x8DF3;&#x8F6C;&#x6CE8;&#x518C;&#x7684;&#x8DEF;&#x7531;
+      this.$router.push(&apos;/register&apos;);
+    }
+  }
+}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+<span class="token selector">#login</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;Noto Serif SC&apos;</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login &gt;&gt;&gt; .el-input__inner</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;Noto Serif SC&apos;</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .bgbox</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> -3<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">object-fit</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> opacity 1s<span class="token punctuation">,</span>transform .25s<span class="token punctuation">,</span>filter .25s<span class="token punctuation">;</span>
+  <span class="token property">backface-visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .logo</span> <span class="token punctuation">{</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 150px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .wrap</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 315px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0 25px 0 25px<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.85<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .btn_login</span> <span class="token punctuation">{</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .btn_login button</span><span class="token punctuation">{</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">&apos;Noto Serif SC&apos;</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 38px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">#login .suffix</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span>14px<span class="token punctuation">;</span>
+  <span class="token property">line-height</span><span class="token punctuation">:</span>10px<span class="token punctuation">;</span>
+  <span class="token property">color</span><span class="token punctuation">:</span>#999<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+  <span class="token property">float</span><span class="token punctuation">:</span>right<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6548;&#x679C;&#x56FE;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="../../img/post-login/new_login.png" alt="&#x65B0;&#x767B;&#x5F55;&#x9875;&#x9762;"></p>
+<h2 id="&#x4EE3;&#x7801;&#x63D0;&#x793A;"><a name="&#x4EE3;&#x7801;&#x63D0;&#x793A;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x63D0;&#x793A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x63D0;&#x793A;</h2>
+<h3 id="&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;"><a name="&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x54CD;&#x5E94;&#x56DE;&#x8F66;&#x4E8B;&#x4EF6;</h3>
+<p>&#x5728;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-input</span>
+    <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x5BC6;&#x7801;<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">show-password</span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.password<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">autocomplete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>off<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">@keyup.enter.native</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>login<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-input</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><code>@keyup.enter.native=&quot;login&quot;</code> &#x8868;&#x793A;&#xFF0C;&#x7528;&#x6237;&#x5728;&#x8BE5;&#x8F93;&#x5165;&#x6846;&#x4E2D;&#x4F7F;&#x7528;&#x952E;tade&#x76D8;&#x56DE;&#x8F66;&#x540E;&#xFF0C;&#x5C06;&#x89E6;&#x53D1; <code>login</code> &#x51FD;&#x6570;&#x3002;</p>
+<h3 id="scoped-css"><a name="scoped-css" class="anchor-navigation-ex-anchor" href="#scoped-css"><i class="fa fa-link" aria-hidden="true"></i></a>Scoped CSS</h3>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5728;&#x76EE;&#x524D;&#x6240;&#x5199;&#x7684;&#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;<code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span></code> &#x6807;&#x7B7E;&#x90FD;&#x6709; <code>scoped</code> &#x5C5E;&#x6027;&#xFF0C;&#x5176;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x4FDD;&#x8BC1;&#x5B83;&#x7684; CSS &#x53EA;&#x4F5C;&#x7528;&#x4E8E;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x9632;&#x6B62;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#xFF08;&#x5305;&#x542B;&#x7236;&#x7EC4;&#x4EF6;&#x4E0E;&#x5B50;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#xFF09;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x540D;&#x76F8;&#x540C;&#x7684; CSS &#x7C7B;&#x4F5C;&#x7528;&#x57DF;&#x6DF7;&#x4E71;&#x3002;</p>
+<p>&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x4ECB;&#x7ECD;&#x53EF;&#x89C1; <a target="_blank" href="https://vue-loader.vuejs.org/zh/guide/scoped-css.html" _target="blank">Scoped CSS - Vue Loader</a>&#x3002;</p>
+<p>&#x7136;&#x800C;&#xFF0C;&#x4F7F;&#x7528; ElementUI &#x7B49; UI &#x7EC4;&#x4EF6;&#x5E93;&#x540E;&#xFF0C;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#xFF1A;&#x6211;&#x4EEC;&#x60F3;&#x5728;&#x672C;&#x9875;&#x9762;&#x6587;&#x4EF6;&#x4E2D;&#x4FEE;&#x6539;&#x4F7F;&#x7528;&#x7684; UI &#x7EC4;&#x4EF6;&#x7684;&#x5185;&#x7F6E;&#x6837;&#x5F0F;&#xFF0C;&#x4F46; UI &#x7EC4;&#x4EF6;&#x662F;&#x5B9A;&#x4E49;&#x4E8E;&#x672C;&#x6587;&#x4EF6;&#x5916;&#x7684;&#xFF0C;&#x4F7F;&#x7528; <code>scoped</code> &#x5C5E;&#x6027;&#x540E;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x6B63;&#x5E38;&#x7684;&#x6307;&#x5B9A;&#x548C;&#x4FEE;&#x6539;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x529E;&#x6CD5;&#x4FEE;&#x6539;&#x5176;&#x6837;&#x5F0F;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684; CSS &#x90E8;&#x5206;&#xFF0C;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x6BB5;&#xFF1A;</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">#login &gt;&gt;&gt; .el-input__inner</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre>
+<p><code>&gt;&gt;&gt;</code> &#x662F; CSS &#x4E2D;&#x7684;&#x6DF1;&#x5EA6;&#x4F5C;&#x7528;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x5B83;&#x80FD;&#x4F7F; <code>scoped</code> &#x6837;&#x5F0F;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#x4F5C;&#x7528;&#x5F97;&#x66F4;&#x6DF1;&#xFF0C;&#x4F8B;&#x5982;&#x5F71;&#x54CD;&#x5B50;&#x7EC4;&#x4EF6;&#x3002;</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">&lt;style scoped&gt;
+.a &gt;&gt;&gt; .b</span> <span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span>
+&lt;/style&gt;
+</code></pre>
+<p>&#x5C06;&#x7F16;&#x8BD1;&#x6210;&#xFF1A;</p>
+<pre class="language-"><code class="lang-css"><span class="token selector">.a[data-v-f3f3eg9] .b</span> <span class="token punctuation">{</span> <span class="token comment">/* ... */</span> <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7531;&#x6B64;&#x53EF;&#x89C1;&#xFF0C;&#x901A;&#x8FC7;&#x6DF1;&#x5EA6;&#x4F5C;&#x7528;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E2A; Vue &#x6587;&#x4EF6;&#x7684; <code>scoped</code> &#x6837;&#x5F0F;&#x4E2D;&#x4FEE;&#x6539;&#x6307;&#x5B9A; UI &#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x6837;&#x5F0F;&#xFF0C;&#x4E14;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5176;&#x5B83; Vue &#x6587;&#x4EF6;&#x4E2D;&#x8BE5; UI &#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x539F;&#x59CB;&#x6837;&#x5F0F;&#x3002;</p>
+<script src="https://utteranc.es/client.js" repo="Super-BUAA-2021/Vuebook" issue-term="pathname" label="Comment" theme="github-light" crossorigin="anonymous" async>
+</script> 
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; blog.zewan.cc 2022 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x7AE0;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-03-25 03:21:11
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="08-elementUI.html" class="navigation navigation-prev " aria-label="Previous page: Vue 引入 ElementUI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10-component.html" class="navigation navigation-next " aria-label="Next page: Vue 组件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Vue 开发实战三：重写登录","level":"3.9","depth":1,"next":{"title":"Vue 组件","level":"3.10","depth":1,"path":"post/part1/10-component.md","ref":"post/part1/10-component.md","articles":[]},"previous":{"title":"Vue 引入 ElementUI","level":"3.8","depth":1,"path":"post/part1/08-elementUI.md","ref":"post/part1/08-elementUI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchor-navigation-ex","expandable-chapters","advanced-emoji","flexible-alerts","chapter-fold","code","splitter","-lunr","-search","search-pro","tbfed-pagefooter","github","theme-comscore","multipart","-livereload","prism","-highlight"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy blog.zewan.cc 2022","modify_label":"该文章修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"lang":{"shell":"bash"},"css":["prismjs/themes/prism.css"]},"github":{"url":"https://github.com/ZewanHuang/vue-gitbook"},"splitter":{},"search-pro":{},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":false,"printLog":false,"multipleH1":false,"mode":"float","showGoTop":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"}},"theme-comscore":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"links":{"sidebar":{"Home":"https://blog.zewan.cc"}},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"ZewanHuang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"VUE BOOK","gitbook":"*","description":"Vue 框架的使用教程"},"file":{"path":"post/part1/09-elementUI-login.md","mtime":"2022-03-25T03:21:11.786Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2022-03-25T03:22:06.376Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
